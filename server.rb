@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  "Go somewhere else"
+  File.read('public/my_site.html')
 end
