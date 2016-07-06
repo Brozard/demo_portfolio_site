@@ -1,4 +1,4 @@
-body{
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -133,10 +133,13 @@ span.right-image img {
   z-index: -1;
 }
 
-content span {
-  /*border: 2px solid red;*/
+content > * {
   width: 70vw;
   margin: 0 auto;
+}
+
+content span {
+  /*border: 2px solid red;*/
   padding: 1em;
   box-sizing: border-box;
 }
@@ -145,8 +148,6 @@ content section {
   display: flex;
   flex-direction: row;
   /*border: 2px solid red;*/
-  width: 70vw;
-  margin: 0 auto;
   box-sizing: border-box; 
 }
 
