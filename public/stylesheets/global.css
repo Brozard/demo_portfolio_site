@@ -12,7 +12,7 @@ body {
 header {
   height: 12vh;
   padding: 1em;
-  background-color: #30747f;
+  background-color: #30647f;
 }
 
 header h1 {
@@ -30,7 +30,7 @@ div.black-bar {
 main {
   display: flex;
   flex-direction: row;
-  background-color: rgba(100, 225, 150, 0.25);
+  background-color: rgba(100, 125, 135, 0.25);
 }
 
 aside {
@@ -40,19 +40,19 @@ aside {
 #left {
   /*background-color: red;*/
   background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* Standard syntax */
+  background: -webkit-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */
 }
 
 #right {
   /*background-color: red;*/
   background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(right, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, rgba(100, 225, 150, 1), rgba(100, 225, 150, 0)); /* Standard syntax */
+  background: -webkit-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */
 }
 
 content {
@@ -62,7 +62,7 @@ content {
 
 a {
   text-decoration: none;
-  color: #3d9;
+  color: #68a;
 }
 
 a:hover {
