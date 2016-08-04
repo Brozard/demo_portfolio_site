@@ -34,29 +34,30 @@ main {
 }
 
 aside {
-  width: 25vw;
+  width: 15vw;
 }
 
-#left {
+/*#left {*/
   /*background-color: red;*/
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */
-}
+  /*background: red;  For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(to right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */*/
+/*}*/
 
-#right {
+/*#right {*/
   /*background-color: red;*/
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */
-}
+  /*background: red;  For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(to left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */*/
+/*}*/
 
 content {
   display: flex;
+  height: 40em;
   flex-direction: column;
 }
 
@@ -133,10 +134,10 @@ span.right-image img {
   z-index: -1;
 }
 
-content > * {
+/*content > * {
   width: 70vw;
   margin: 0 auto;
-}
+}*/
 
 content span {
   /*border: 2px solid red;*/
@@ -146,13 +147,13 @@ content span {
 
 content section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /*border: 2px solid red;*/
   box-sizing: border-box; 
 }
 
 content section p {
-  /*border: 2px solid red;*/
+  border: 2px solid red;
   margin: 0 auto;
   padding: 1em;
   box-sizing: border-box; 
@@ -168,9 +169,27 @@ footer {
   color: white;
 }
 
+@media only screen and (max-width: 992px) {
+
+  content section {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
 @media only screen and (max-width: 768px) {
 
   /* For tablets */
+
+ /* content > * {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  aside {
+    width: 10vw;
+  }*/
 
 }
 
@@ -181,5 +200,14 @@ footer {
   footer {
     position: fixed;
   }
+
+  /*content > * {
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  aside {
+    width: 0vw;
+  }*/
   
 }

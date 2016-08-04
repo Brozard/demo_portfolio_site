@@ -57,4 +57,4 @@ end
 
 last_5_pushed_repos_commits = repo_commits(last_5_pushed_repos)
 
-puts last_5_pushed_repos_commits
+# puts last_5_pushed_repos_commits

@@ -1,8 +1,7 @@
 require 'sinatra'
-# require 'sinatra/partial'
 
 get '/' do
-  File.read('public/home.html')
+  File.read('public/home.html.erb')
 end
 
 get '/about' do
