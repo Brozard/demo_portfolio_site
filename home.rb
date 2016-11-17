@@ -21,8 +21,12 @@ require 'httparty'
 github_url = "https://api.github.com"
 github_user = "Brozard"
 users_url = "#{github_url}/users/#{github_user}/repos"
+user_events_url = "#{github_url}/users/#{github_user}/events"
 
 repo_list = HTTParty.get(users_url)
+event_list = HTTParty.get(user_events_url)
+
+puts repo_list
 
 def most_recent_repo_push(repo_list)
   index = 0
@@ -44,8 +48,11 @@ end
 
 # puts repo_list
 
-last_5_pushed_repos =  last_5_repos_pushed_to(repo_list)
+# last_5_pushed_repos =  last_5_repos_pushed_to(repo_list)
 # puts last_5_pushed_repos
+# last_5_pushed_repos.each do |repo|
+#   puts repo["full_name"]
+# end
 
 def repo_commits(repos)
   repos_commits = []
@@ -55,6 +62,14 @@ def repo_commits(repos)
   repos_commits
 end
 
-last_5_pushed_repos_commits = repo_commits(last_5_pushed_repos)
+# last_5_pushed_repos_commits = repo_commits(last_5_pushed_repos)
 
 # puts last_5_pushed_repos_commits
+
+def most_recent_commits(event_list)
+  5.times do |i|
+    puts event_list[i]["id"]
+  end
+end
+
+most_recent_commits(event_list)

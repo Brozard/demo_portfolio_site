@@ -46,7 +46,8 @@ h1 {
 
 .header,
 .footer {
-  padding: 10px 20px;
+  padding: 10px 40px;
+  margin: 0px -20px;
   background: #a7a7a7;
   color: #fff;
 }
@@ -82,4 +83,17 @@ p {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  body, body>* {
+    font-size: 1.5em
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100% !important;
+    margin: 0 !important;
+  }
 }
