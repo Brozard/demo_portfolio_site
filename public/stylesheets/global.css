@@ -1,213 +1,85 @@
+/* Reset */
+
+html,
 body {
   height: 100%;
-  width: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial;
-  overflow: auto;
-  box-sizing: border-box;
+  padding: 0;
 }
 
-header {
-  height: 12vh;
-  padding: 1em;
-  background-color: #30647f;
-}
-
-header h1 {
-  font-size: 3em;
-  color: white;
-  text-align: center;
-}
-
-div.black-bar {
-  background-color: black;
-  height: 0.5em;
-  width: 100%;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(100, 125, 135, 0.25);
-}
-
-aside {
-  width: 15vw;
-}
-
-/*#left {*/
-  /*background-color: red;*/
-  /*background: red;  For browsers that do not support gradients */
-  /*background: -webkit-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */*/
-  /*background: -o-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */*/
-  /*background: -moz-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */*/
-  /*background: linear-gradient(to right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */*/
-/*}*/
-
-/*#right {*/
-  /*background-color: red;*/
-  /*background: red;  For browsers that do not support gradients */
-  /*background: -webkit-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */*/
-  /*background: -o-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */*/
-  /*background: -moz-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */*/
-  /*background: linear-gradient(to left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */*/
-/*}*/
-
-content {
-  display: flex;
-  height: 40em;
-  flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-  color: #68a;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #fff;
+#body {
+  background-color: #e7e7e7;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
+  font-weight: bold;
 }
 
-span.right-image {
-  display: flex;
-  flex-direction: row;
-  /*margin: 1em;*/
+
+/* Essentials */
+
+.container {
+  display: table;
 }
 
-span.right-image img {
-  margin-left: 3em;
+.content {
+  display: table-row;
+  height: 100%;
+}
+
+.content-body {
+  display: table-cell;
+}
+
+.scroller {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+
+/* Aestetics */
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.header,
+.footer {
+  padding: 10px 20px;
+  background: #a7a7a7;
+  color: #fff;
+}
+
+.scroller {
+  padding: 20px;
+  background: #f7f7f7;
 }
 
 .top-links {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: fixed;
-}
-
-.top-links div {
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-content: center;
-  text-align: right;
-  width: 150px;
-  height: 75px;
-  transform: translate(-20px, 90px) rotate(-10deg);
-  transition: width 0.5s, transform 0.5s;
-  background-color: #000;
-}
-
-.top-links div:hover {
-  width: 200px;
-  background-color: #111;
-  transform: translate(-30px, 87px) rotate(-10deg);
-}
-
-.top-links div h2 {
-  margin-left: auto;
-  padding: 1em;
-  color: #fff;
-}
-
-#grad {
-  background: #f00; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(255, 0, 0, 1), rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(255, 0, 0, 1), rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0)); /* Standard syntax */
-}
-
-#back-block {
-  width: 120vw;
-  height: 100px;
-  background-color: #09DE90;
-  transform: translate(0px, 300px) rotate(-10deg);
-  z-index: -1;
-}
-
-/*content > * {
-  width: 70vw;
-  margin: 0 auto;
-}*/
-
-content span {
-  /*border: 2px solid red;*/
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-content section {
-  display: flex;
-  flex-direction: column;
-  /*border: 2px solid red;*/
-  box-sizing: border-box; 
-}
-
-content section p {
-  border: 2px solid red;
-  margin: 0 auto;
-  padding: 1em;
-  box-sizing: border-box; 
-}
-
-
-footer {
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  height: 3em;
-  background-color: black;
-  color: white;
 }
 
-@media only screen and (max-width: 992px) {
-
-  content section {
-    display: flex;
-    flex-direction: column;
-  }
-
+.top-links>div {
+  padding-right: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-
-  /* For tablets */
-
- /* content > * {
-    width: 80vw;
-    margin: 0 auto;
-  }
-
-  aside {
-    width: 10vw;
-  }*/
-
+em {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-@media only screen and (max-width: 320px) {
+em:after {
+  content: "\a";
+  white-space: pre;
+}
 
-  /* For mobile phones */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
-  footer {
-    position: fixed;
-  }
-
-  /*content > * {
-    width: 95vw;
-    margin: 0 auto;
-  }
-
-  aside {
-    width: 0vw;
-  }*/
-  
+p:last-child {
+  margin-bottom: 0;
 }

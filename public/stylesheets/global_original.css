@@ -1,0 +1,215 @@
+html, body {
+  /*height: 100%;*/
+  /*width: 100%;*/
+  margin: 0;
+  padding: 0;
+  /*display: flex;
+  flex-direction: column;*/
+  font-family: Arial;
+  /*overflow: auto;
+  box-sizing: border-box;*/
+  background-color: rgb(215, 225, 225);
+}
+
+.container {
+  display: table;
+}
+
+header {
+  height: 12vh;
+  padding: 1em;
+  background-color: #30647f;
+}
+
+header h1 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+main, main>* {
+  /*display: flex;
+  flex-direction: row;*/
+  background-color: rgb(215, 225, 225);
+}
+
+aside {
+  width: 15vw;
+}
+
+/*#left {*/
+  /*background-color: red;*/
+  /*background: red;  For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(to right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */*/
+/*}*/
+
+/*#right {*/
+  /*background-color: red;*/
+  /*background: red;  For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(right, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(to left, rgba(100, 125, 135, 1), rgba(100, 125, 135, 0)); /* Standard syntax */*/
+/*}*/
+
+content {
+  /*display: flex;
+  flex-direction: column;*/
+  height: 40em;
+}
+
+content, content>* {
+  background-color: rgb(215, 225, 225);
+}
+
+a {
+  text-decoration: none;
+  color: #68a;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  /*display: flex;
+  justify-content: center;*/
+}
+
+span.right-image {
+  /*display: flex;
+  flex-direction: row;*/
+  /*margin: 1em;*/
+}
+
+span.right-image img {
+  /*margin-left: 3em;*/
+}
+
+.top-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+}
+
+.top-links div {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-content: center;
+  text-align: right;
+  width: 8em;
+  height: 2em;
+  /*transform: translate(-20px, 90px) rotate(-10deg);*/
+  /*transition: width 0.5s, transform 0.5s;*/
+  background-color: #000;
+  color: #fff;
+  margin-left: auto;
+  padding: 1em;
+}
+
+.top-links div:hover {
+  /*width: 10em;*/
+  background-color: #222;
+  /*transform: translate(2em, 0);*/
+}
+
+/*#grad {
+  background: #f00;
+  background: -webkit-linear-gradient(left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0));
+  background: -o-linear-gradient(right, rgba(255, 0, 0, 1), rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0));
+  background: -moz-linear-gradient(right, rgba(255, 0, 0, 1), rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0));
+  background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0));
+}*/
+
+/*#back-block {
+  width: 120vw;
+  height: 100px;
+  background-color: #09DE90;
+  transform: translate(0px, 300px) rotate(-10deg);
+  z-index: -1;
+}*/
+
+/*content > * {
+  width: 70vw;
+  margin: 0 auto;
+}*/
+
+content span {
+  /*border: 2px solid red;*/
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+content section {
+  /*display: flex;
+  flex-direction: column;*/
+  /*border: 2px solid red;*/
+  box-sizing: border-box; 
+}
+
+content section p {
+  border: 2px solid red;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box; 
+}
+
+
+footer {
+  /*justify-content: space-around;*/
+  height: 3em;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
+
+@media only screen and (max-width: 992px) {
+
+  content section {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For tablets */
+
+ /* content > * {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  aside {
+    width: 10vw;
+  }*/
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  /* For mobile phones */
+
+  footer {
+    position: fixed;
+  }
+
+  /*content > * {
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  aside {
+    width: 0vw;
+  }*/
+  
+}
